@@ -20,12 +20,12 @@
     <div class="header">
       <a href="#" class="h_circle">h</a>
       <div class="h_links">
-        <a href="#">link 1 long</a>
-        <a href="#">link 2</a>
-        <a href="#">link 3</a>
-        <a href="#">link 4</a>
-        <a href="#">link 5</a>
-        <a href="#">link 6</a>
+        <a href="index.html">link 1 long</a>
+        <a href="page.html">link 2</a>
+        <a href="page2.html">link 3</a>
+        <a href="page3.html">link 4</a>
+        <a href="page4.html">link 5</a>
+        <a href="https://www.lipsum.com/">link 6</a>
       </div>
     </div>
     <div class="main_cont">
@@ -41,6 +41,25 @@
 </html>
 <!-- partial -->
   <script  src="./script.js"></script>
+  <script>
+	let t = news_block.createBlocks(news);
+	let m_left = document.querySelector(".m_left");
+	for(let i = 0; i < t.length; i++){
+	  let h = document.createElement("a");
+	  h.href = t[i].href; h.className = "l_block";
+	  h.innerHTML = "<img class='l_b_img' src='"+t[i].src+"'/><div class='l_b_content'><h1>"+t[i].heading+"</h1><p>"+t[i].text+"</p></div>";
+	  m_left.appendChild(h);
+	}
+	// create headings r blocks
+	let r_blocks = r_block.createBlocks(["Block R1", "Иван Семёныч", "Угощает", "Голубцами", "Важная информация", "блок информации", "да"]);
+	let m_right = document.querySelector(".m_right");
+	r_blocks.forEach(function(item, i, arr){
+	  let elem = document.createElement("div");
+	  elem.className = i+1 != r_blocks.length ? "r_block" : "r_block m_n";
+	  elem.innerHTML = "<marquee>"+item.text+"</marquee>";
+	  m_right.appendChild(elem);
+	});
 
+  </script>
 </body>
 </html>

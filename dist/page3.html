@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - yes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div class="site_container">
+    <div class="header">
+      <a href="index.html" class="h_circle">h</a>
+      <div class="h_links">
+        <a href="index.html">link 1 long</a>
+        <a href="page.html">link 2</a>
+        <a href="page2.html">link 3</a>
+        <a href="page3.html">link 4</a>
+        <a href="page4.html">link 5</a>
+        <a href="https://www.lipsum.com/">link 6</a>
+      </div>
+    </div>
+    <div class="main_cont">
+      <div class="main m_left art_cont">
+			<h1><img class="l_b_img" src="https://thumbs.gfycat.com/FlawlessDimpledAfricancivet.webp"/>[sauce]</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque in nisl eu efficitur. Vivamus nec est sed quam gravida blandit. Vivamus euismod libero id massa pulvinar tincidunt. Nam mattis neque ligula, ut facilisis enim volutpat rhoncus. Quisque sit amet volutpat nisl, nec facilisis arcu. Etiam maximus porta tristique. Fusce pharetra auctor dui. Mauris id dictum purus. Ut vitae luctus lectus. Morbi pretium dui quis libero feugiat ultrices. Nunc a dolor odio. Aenean vitae pharetra ante, a tempor dolor. Morbi id massa accumsan, finibus tortor vitae, facilisis sapien.
+<br><br>
+Sed sollicitudin eu ante vel pretium. Etiam ex elit, volutpat at dignissim fringilla, consequat pellentesque sapien. Sed malesuada lectus vitae rutrum varius. Fusce sodales suscipit est vitae eleifend. Sed faucibus magna ut vehicula faucibus. Vestibulum maximus ultrices dui a accumsan. Proin ac luctus felis. Nullam vitae ultrices sapien. Aliquam semper, nibh sed fringilla sollicitudin, libero magna ornare lacus, non placerat metus eros non lectus. Integer et justo orci. Integer eget erat ex.
+<br><br>
+Integer auctor mollis felis, at bibendum leo. Donec vehicula gravida magna. Aenean ac tincidunt augue, sed ultricies augue. Nam rhoncus arcu diam, ac condimentum nibh fringilla nec. Donec laoreet fringilla suscipit. Maecenas dui massa, lacinia eget ex non, aliquam dapibus purus. Nam laoreet urna ante, nec sagittis tortor vestibulum vitae. Cras ut risus leo.
+<br><br>
+Sed vehicula arcu ut justo lacinia, eget venenatis dolor scelerisque. Morbi pellentesque vitae nisi at dignissim. Donec euismod sed lorem quis vestibulum. In hac habitasse platea dictumst. Donec leo nibh, iaculis vel luctus ut, interdum non nulla. Etiam luctus ligula faucibus viverra venenatis. Vivamus facilisis egestas ligula, nec molestie libero sagittis eu. Proin vel purus eget justo posuere suscipit. Ut congue nisl vitae vulputate vulputate. Phasellus id sapien pretium, pharetra ipsum cursus, accumsan metus. Proin tempus elementum nisl, et sollicitudin arcu condimentum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+<br><br>
+Cras dapibus purus vitae dui vestibulum vehicula. Nam malesuada tortor sit amet purus sagittis bibendum. Fusce augue nibh, iaculis vitae quam in, dignissim mollis risus. Phasellus accumsan eleifend magna vel placerat. Vestibulum interdum mattis tellus, eget ornare risus facilisis dignissim. Sed pretium nulla ut velit fringilla mollis. Proin nec ante vitae risus egestas suscipit. Morbi sit amet ante non augue bibendum tincidunt. Maecenas scelerisque ornare mauris nec dictum. Proin pellentesque volutpat nunc a suscipit. Nulla id faucibus leo. Cras pellentesque leo ac lacus mollis, ut suscipit erat hendrerit. Nam risus ligula, mollis quis justo eget, sodales feugiat turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam orci urna, commodo vel cursus ullamcorper, egestas sed nulla. Sed tempus erat tellus, ut iaculis metus dictum non.</p>
+	  </div>
+      <div class="main m_right"></div>
+    </div>
+    <div class="footer">
+      copyright lolololol 2021
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+<script  src="./script.js"></script>
+<script>
+// create headings r blocks
+	let r_blocks = r_block.createBlocks(["Block R1", "Иван Семёныч", "Угощает", "Голубцами", "Важная информация", "блок информации", "да"]);
+	let m_right = document.querySelector(".m_right");
+	r_blocks.forEach(function(item, i, arr){
+	  let elem = document.createElement("div");
+	  elem.className = i+1 != r_blocks.length ? "r_block" : "r_block m_n";
+	  elem.innerHTML = "<marquee>"+item.text+"</marquee>";
+	  m_right.appendChild(elem);
+	});
+</script>
+</body>
+</html>

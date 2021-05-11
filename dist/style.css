@@ -71,6 +71,16 @@ body{
   margin-right: 15px;
   height:250px;
 }
+.art_cont{
+  background: #d4aa7d;
+  font-size:20px;
+}
+.art_cont h1{
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  font-family: arial;
+}
 .m_right{
   width: 30%;
   display: flex;
@@ -83,7 +93,8 @@ body{
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
-  font-size:40pt;
+  font-size: 40pt;
+  font-family: monospace;
 }
 .m_n{ margin: 0; }
 .footer{

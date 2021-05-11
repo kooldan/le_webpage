@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - yes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div class="site_container">
+    <div class="header">
+      <a href="index.html" class="h_circle">h</a>
+      <div class="h_links">
+        <a href="index.html">link 1 long</a>
+        <a href="page.html">link 2</a>
+        <a href="page2.html">link 3</a>
+        <a href="page3.html">link 4</a>
+        <a href="page4.html">link 5</a>
+        <a href="https://www.lipsum.com/">link 6</a>
+      </div>
+    </div>
+    <div class="main_cont">
+      <div class="main m_left art_cont">
+			<h1><img src="../speen.gif"/><span style="width:20px;"></span>[article page]</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet augue facilisis, posuere ipsum non, malesuada justo. Duis nec viverra mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Donec sit amet laoreet turpis. Cras malesuada volutpat velit. In consequat nisl vel lorem maximus, bibendum consectetur lacus accumsan. Nullam vel euismod ligula. Suspendisse dignissim vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium lacinia nunc. Nam venenatis volutpat ex, vitae efficitur odio ultricies a.
+<br><br>
+Mauris quis aliquet velit, non condimentum tortor. Suspendisse congue lacus dolor, a vestibulum libero molestie eget. Fusce suscipit congue lobortis. Maecenas tincidunt nibh a tellus suscipit, ut luctus metus venenatis. Quisque eget porttitor elit. Proin scelerisque enim eget neque volutpat rhoncus bibendum vel ex. Quisque at arcu turpis. In viverra dui nisl, vel aliquet metus aliquam non. Pellentesque vitae ante sed est vehicula congue. Pellentesque cursus purus vel viverra cursus. Integer feugiat lorem eu elementum feugiat. Proin fringilla justo in enim maximus commodo.
+<br><br>
+Sed imperdiet sit amet lectus et vulputate. Quisque eget placerat purus. Donec vestibulum malesuada nunc eget ornare. Sed sit amet auctor metus. Donec in sagittis elit, sed semper est. Vestibulum bibendum nec ex ut rutrum. Nullam ac accumsan libero, at imperdiet eros. Donec at massa in diam egestas condimentum sed ac odio. Morbi iaculis tortor diam, ut scelerisque risus ornare rhoncus. Fusce laoreet nec tortor in luctus. Morbi consequat diam rhoncus neque tristique, eget porta orci bibendum.
+<br><br>
+Nam varius urna sem, id cursus ipsum consectetur ut. Vestibulum tincidunt et felis vel pharetra. Maecenas vestibulum, orci quis rhoncus viverra, ante dolor sagittis lorem, ut commodo erat lectus quis ex. Aliquam a risus elit. Suspendisse eu enim lobortis, lacinia sapien vel, mollis lectus. Nunc dui eros, mollis vel lacus et, facilisis egestas nunc. Aliquam porta finibus libero, quis condimentum sem pellentesque vitae.
+<br><br>
+Integer tincidunt sagittis nulla, eget maximus justo. Mauris quis lacinia elit. Duis faucibus dui id tellus dictum lacinia. Nunc placerat magna enim, eget blandit ipsum sollicitudin sed. Ut at vestibulum dui. Morbi lacinia enim ut lorem porta, vel finibus augue viverra. Sed accumsan justo scelerisque, faucibus erat vel, tristique enim. Nullam magna urna, lobortis eget sodales imperdiet, maximus id orci.</p>
+	  </div>
+      <div class="main m_right"></div>
+    </div>
+    <div class="footer">
+      copyright lolololol 2021
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+<script  src="./script.js"></script>
+<script>
+// create headings r blocks
+	let r_blocks = r_block.createBlocks(["Block R1", "Иван Семёныч", "Угощает", "Голубцами", "Важная информация", "блок информации", "да"]);
+	let m_right = document.querySelector(".m_right");
+	r_blocks.forEach(function(item, i, arr){
+	  let elem = document.createElement("div");
+	  elem.className = i+1 != r_blocks.length ? "r_block" : "r_block m_n";
+	  elem.innerHTML = "<marquee>"+item.text+"</marquee>";
+	  m_right.appendChild(elem);
+	});
+</script>
+</body>
+</html>

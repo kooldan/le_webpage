@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - yes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div class="site_container">
+    <div class="header">
+      <a href="index.html" class="h_circle">h</a>
+      <div class="h_links">
+        <a href="index.html">link 1 long</a>
+        <a href="page.html">link 2</a>
+        <a href="page2.html">link 3</a>
+        <a href="page3.html">link 4</a>
+        <a href="page4.html">link 5</a>
+        <a href="https://www.lipsum.com/">link 6</a>
+      </div>
+    </div>
+    <div class="main_cont">
+      <div class="main m_left art_cont">
+			<h1><img class="l_b_img" src="https://thumbs.gfycat.com/ImperturbableBiodegradableCat.webp"/>[u mad?]</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu malesuada lectus. Vestibulum eget blandit nisi. Integer sollicitudin non arcu et lacinia. Fusce at sapien sed ante viverra egestas sed eu massa. Mauris convallis laoreet enim, eget consectetur velit suscipit et. Pellentesque suscipit tortor at ligula tincidunt, id ornare velit egestas. In finibus pretium aliquam. Ut ut iaculis elit. Integer finibus mauris ac erat interdum consequat. Integer non nibh eget dui finibus elementum. Ut vulputate ullamcorper tellus id auctor. Proin placerat urna vitae ligula tempus, eu tristique nibh porta. Nam ac est pulvinar, lacinia quam sit amet, eleifend lacus. Suspendisse in lobortis urna.
+<br><br>
+Maecenas auctor nibh non commodo suscipit. Duis scelerisque massa id ligula molestie placerat. Donec facilisis arcu ex, vel sollicitudin odio viverra nec. Sed ligula quam, consequat in pretium sit amet, suscipit ut felis. Phasellus tempor ex eget elit fringilla mollis. Phasellus vitae urna vitae lectus dapibus luctus a posuere erat. Curabitur non ipsum vel lectus sollicitudin efficitur. Curabitur quis efficitur odio. Phasellus pharetra leo non dolor mollis viverra.
+<br><br>
+Vestibulum sem tortor, sollicitudin non lacus dictum, mattis laoreet lacus. Proin non libero dapibus mi efficitur commodo at ac leo. In mollis sapien massa, consectetur malesuada nunc dictum vitae. Quisque a imperdiet tellus. Sed vitae mattis lacus. Curabitur viverra auctor dolor, in tristique mauris ornare at. Nulla urna turpis, porttitor a pretium nec, placerat ac lectus. Phasellus euismod odio in lorem blandit, non efficitur nisi aliquam. Proin nibh diam, convallis non nunc vitae, efficitur dictum justo. Fusce porttitor eros nisi, at pretium nulla efficitur vitae. Morbi eu ipsum id neque tempus bibendum. Nunc dignissim neque ac odio tempus, quis vestibulum orci elementum. Maecenas vestibulum ornare lacus non fermentum.
+<br><br>
+Nunc ac sollicitudin augue. Praesent blandit luctus blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eu lorem in metus suscipit posuere. Etiam magna urna, efficitur quis dapibus quis, blandit non mi. Curabitur molestie viverra dui, sed tempus neque placerat quis. Donec id sagittis augue. Nam quam nibh, imperdiet eu tincidunt non, luctus eu purus. Nullam finibus sapien vitae mauris vulputate, nec commodo lacus porta. Vivamus malesuada in purus eget vehicula. Duis et gravida nibh, a lacinia metus. Phasellus non facilisis dolor, eget commodo nibh. Nam a dapibus velit.
+<br><br>
+Mauris risus mi, dignissim dignissim felis nec, blandit interdum purus. Morbi in finibus sapien, viverra faucibus mi. Ut tempus vitae nibh et elementum. In tempus molestie dolor, non lobortis sapien varius eu. Sed imperdiet accumsan mauris, ut venenatis ligula venenatis a. Mauris non condimentum lacus. Aenean non libero eu ante placerat vulputate quis at mi. Cras tempor ipsum auctor, posuere ante quis, ullamcorper nulla. Ut volutpat felis lorem, sit amet pretium leo volutpat non.
+</p>
+	  </div>
+      <div class="main m_right"></div>
+    </div>
+    <div class="footer">
+      copyright lolololol 2021
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+<script  src="./script.js"></script>
+<script>
+// create headings r blocks
+	let r_blocks = r_block.createBlocks(["Block R1", "Иван Семёныч", "Угощает", "Голубцами", "Важная информация", "блок информации", "да"]);
+	let m_right = document.querySelector(".m_right");
+	r_blocks.forEach(function(item, i, arr){
+	  let elem = document.createElement("div");
+	  elem.className = i+1 != r_blocks.length ? "r_block" : "r_block m_n";
+	  elem.innerHTML = "<marquee>"+item.text+"</marquee>";
+	  m_right.appendChild(elem);
+	});
+</script>
+</body>
+</html>

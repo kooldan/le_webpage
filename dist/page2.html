@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - yes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div class="site_container">
+    <div class="header">
+      <a href="index.html" class="h_circle">h</a>
+      <div class="h_links">
+        <a href="index.html">link 1 long</a>
+        <a href="page.html">link 2</a>
+        <a href="page2.html">link 3</a>
+        <a href="page3.html">link 4</a>
+        <a href="page4.html">link 5</a>
+        <a href="https://www.lipsum.com/">link 6</a>
+      </div>
+    </div>
+    <div class="main_cont">
+      <div class="main m_left art_cont">
+			<h1><img class="l_b_img" src="https://thumbs.gfycat.com/HighEagerIndianrockpython-small.gif"/>[page of article]</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus viverra gravida. Fusce dignissim nisi augue, sagittis faucibus turpis pulvinar eu. In viverra, lectus vel pulvinar consectetur, metus nisl iaculis neque, sed porttitor quam mi sit amet purus. Sed egestas molestie libero, eu fermentum sapien lacinia in. Aliquam efficitur risus sed sapien lacinia, vitae lobortis enim malesuada. Quisque varius ligula nec scelerisque tristique. Donec quis vestibulum tellus. Aliquam efficitur leo id leo sollicitudin aliquet. Aenean pulvinar luctus lectus non tincidunt. In consequat quis justo eu bibendum. Pellentesque quis lorem eu leo sollicitudin consectetur. Curabitur at mi massa. Donec sagittis vulputate nisl, at gravida sem mollis vitae. Aenean auctor quis enim in cursus.
+			<br><br>
+			Duis pellentesque, sapien sit amet commodo tempor, nisi tortor finibus sapien, at ornare lorem sapien quis tortor. Sed bibendum ipsum eu vulputate finibus. Mauris scelerisque erat sed lacus feugiat rutrum. Aenean dignissim ultricies orci vel mattis. Fusce porttitor interdum volutpat. Suspendisse ac arcu aliquam magna bibendum consectetur a ut turpis. Quisque ultricies, ligula nec elementum vulputate, massa elit sollicitudin ipsum, a facilisis magna turpis ac dui. Suspendisse non elit vel elit condimentum molestie ac ut diam. Nam vel metus felis.
+			<br><br>
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed cursus volutpat porttitor. Nam ut dui mattis, commodo nulla eget, viverra lorem. Curabitur sed facilisis nibh, posuere pulvinar urna. Quisque elementum mattis orci vitae iaculis. Morbi in neque fermentum velit vestibulum bibendum vel sed libero. Phasellus non accumsan risus, vitae mattis elit. Suspendisse quis placerat dui, quis ornare augue. Sed eget ornare purus, et posuere dui. Nullam lacinia eleifend euismod. Sed hendrerit iaculis purus at faucibus. Etiam efficitur dolor a nunc sagittis feugiat.
+			<br><br>
+			Morbi vestibulum euismod mauris ac auctor. Nam nisi lectus, vestibulum ac nibh ac, auctor vulputate felis. Nullam pretium augue id felis pellentesque efficitur. Etiam sollicitudin neque purus. In sit amet cursus orci. In hac habitasse platea dictumst. Nullam iaculis at massa quis rutrum. Proin vel ultricies nisl. Sed et orci cursus, posuere magna vitae, tincidunt metus. Aliquam sem nibh, condimentum sed pulvinar sed, cursus quis lorem. Quisque interdum turpis eu blandit mattis. Proin vel pharetra turpis. Etiam id hendrerit quam, in pharetra risus.
+			<br><br>
+			Aenean feugiat, sapien efficitur faucibus mollis, nulla magna congue ipsum, ac porttitor lacus sapien sit amet neque. Vivamus id mi sed magna congue volutpat. Quisque nec justo pharetra, lobortis dui ut, egestas tortor. Nam sodales magna non massa mollis vulputate in a turpis. Vestibulum auctor magna ac ultrices semper. Suspendisse potenti. Curabitur pretium dui in tellus placerat, vitae rhoncus massa facilisis. Sed turpis orci, pulvinar at laoreet nec, rhoncus sed sapien. Suspendisse posuere libero ac felis dignissim tempus. Quisque feugiat condimentum lorem a dapibus. Sed tempus velit quis posuere hendrerit. Nulla facilisi.
+		</div>
+      <div class="main m_right"></div>
+    </div>
+    <div class="footer">
+      copyright lolololol 2021
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+<script  src="./script.js"></script>
+<script>
+// create headings r blocks
+	let r_blocks = r_block.createBlocks(["Block R1", "Иван Семёныч", "Угощает", "Голубцами", "Важная информация", "блок информации", "да"]);
+	let m_right = document.querySelector(".m_right");
+	r_blocks.forEach(function(item, i, arr){
+	  let elem = document.createElement("div");
+	  elem.className = i+1 != r_blocks.length ? "r_block" : "r_block m_n";
+	  elem.innerHTML = "<marquee>"+item.text+"</marquee>";
+	  m_right.appendChild(elem);
+	});
+</script>
+</body>
+</html>
